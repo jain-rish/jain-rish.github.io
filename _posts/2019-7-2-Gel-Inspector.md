@@ -10,8 +10,9 @@ Protein production is a multi-billion dollar business, and companies are trying 
 
 
 
+![Figure 1: Gel electrophoresis experimental setup](../images/fig1.jpg)
 
-Figure 1: Gel electrophoresis experimental setup.
+
 
 Visual Inspection of Gels is laborious and expensive
 Scientists (generally more than one, see Figure-2) painstakingly examine each lane individually and give a quality score. Visual examination and labeling is painful and laborious; it is not an efficient use of resources having PhD level scientists doing this repetitively day after day.  On top of that, this process is quite expensive -- To give a rough estimate of costs, if a scientist does this for an 1/2 hour a day @ $100$/hr., 20 days/month, 12 month; the costs can add up to $25K for 2 labelers and add another $25K as lost time to do more interesting work.  This is the reason I built Inspector Machine Learning -- I wanted to determine how image analysis and machine learning could reduce the burden on scientists and help automate the quality inspection of gel images.
