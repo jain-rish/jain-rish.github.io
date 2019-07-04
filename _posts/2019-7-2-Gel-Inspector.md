@@ -1,16 +1,12 @@
----
-layout: post
-title: Electrofor-AI-sis
----
-
-**A Machine Learning tool to assess Protein Quality**
+**Electrofor-AI-sis**
+*A Machine Learning tool to assess Protein Quality*
 
 Protein production is a multi-billion dollar business, and companies are trying to not only increase its production but also improve the quality.  Protein quality is commonly assessed using electrophoresis.  Gel electrophoresis is the experimental method to separate proteins into its fragments based on their size [see Figure-1]. 
 
 
 
 ![My image1](../images/fig1.png)
-[**Fig. 1:** Gel electrophoresis experimental setup. When a voltage gradient is induced across a gel, the heavier proteins flow down the electric river much more slowly than the lighter ones.  These fragments show up under UV exposure as separated individual bands.]
+[**Fig. 1:** *Gel electrophoresis experimental setup. When a voltage gradient is induced across a gel, the heavier proteins flow down the electric river much more slowly than the lighter ones.  These fragments show up under UV exposure as separated individual bands.]
 
 
 
@@ -19,7 +15,7 @@ Scientists (generally more than one, see Figure-2) painstakingly examine each la
  
 
 ![My image2](../images/fig2.png)
-[**Fig. 2:** Scientific personnel making visual examination of gel-lanes, often disagree.]
+[**Fig. 2:** *Scientific personnel making visual examination of gel-lanes, often disagree.]
 
 
 
