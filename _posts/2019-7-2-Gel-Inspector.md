@@ -6,7 +6,6 @@ Protein production is a multi-billion dollar business, and companies are trying 
 ![My image1](../images/fig1.png)
 [**Fig. 1:** *Gel electrophoresis experimental setup. When a voltage gradient is induced across a gel, the heavier proteins flow down the electric river much more slowly than the lighter ones.  These fragments show up under UV exposure as separated individual bands.*]
 
-
 **Visual Inspection of Gels is laborious and expensive**
 
 Scientists (generally more than one, see Figure-2) painstakingly examine each lane individually and give a quality score. Visual examination and labeling is painful and laborious; it is not an efficient use of resources having PhD level scientists doing this repetitively day after day.  On top of that, this process is quite expensive -- To give a rough estimate of costs, if a scientist does this for an 1/2 hour a day @ $100$/hr., 20 days/month, 12 month; the costs can add up to $25K for 2 labelers and add another $25K as lost time to do more interesting work, totalling to $50K, which is a lot of money.  This is the reason I built Inspector Machine Learning -- I wanted to determine how image analysis and machine learning could reduce the burden on scientists and help automate the quality inspection of gel images.
@@ -15,6 +14,7 @@ Scientists (generally more than one, see Figure-2) painstakingly examine each la
 [**Fig. 2:** *Scientific personnel making visual examination of gel-lanes, often disagree.*]
 
 **Digitizing the dataset & building an image pre-processing pipeline**
+
 I worked with a tiny dataset of measly 14 images; each image has 26 lanes (and usually one reference lane); and each lane had one or more bands [see Figure 2].  For my analysis, I needed to isolate the individual lanes and build a single training samples and associate it with their quality labels [Figure 2; quality labels in red].  In total, I had 14X25= 350 samples that were to be used for training/ validation and test.  Note: I did not use/rely on Reference lane information to build features etc. [but they are typically used by the quality assessors].
 
 *I engineerding an image pre-processing pipeline to clean, extract and prepare the data for model building*
@@ -37,6 +37,7 @@ Since I wasn’t able to completely get rid of the curvature from images [in Ste
 
 
 **Modeling and developing the core of Inspector-ML** 
+
 With the dataset prepared; a computer vision pipeline engineered,  I prototyped several machine learning models. 
 
 **A.	Linear models**
@@ -67,7 +68,7 @@ I validated this pipeline on a held-out set of data. The algorithm performed wel
 [**Fig. 6:** *Built ML tool that successfully predicts quality scores for each lane*]
 
 
-Code
+**Code**
 The code for this project is publicly available on my GitHub (https://github.com/jain-rish/inspector_ML)
 
 
