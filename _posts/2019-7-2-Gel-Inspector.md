@@ -34,6 +34,7 @@ This was perhaps the most important step in the analysis since it converted the 
 **Step 4**	*Generated phase-shifted signals with different lags*
 Since I wasn’t able to completely get rid of the curvature from images [look in yellow circle in Step 2]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset 7-X.
 
+
 <img src="../images/fig3.png" width="200%" height="auto"/>
 <em>Figure 3: Image processing pipeline to digitize the data. </em>
 
@@ -48,12 +49,12 @@ I started simple -- applied the family of Logistic Regression models to the prob
 **B.	Non-linear models capture relationships that simple linear models don’t**
 While both types of models can fit the curvature of the 1D signals (Step 3 in the pipeline), decision trees are able to discover novel structural relationships in the signal that linear models aren’t able to capture. Random Forests being much more flexible in the shapes of the curves that it can fit benefitted a lot from data augmentation.
 
-![My image4](../images/fig4.png)
-[**Fig. 4:** *Classification with Random Forest Model with no augmentation; mean accuracy= 70%.*]
+<img src="../images/fig4.png" width="100%" height="auto"/>
+<em>Figure 4: Classification with Random Forest Model with no augmentation; mean accuracy= 70%</em>
 
+<img src="../images/fig5.png" width="100%" height="auto"/>
+<em>Figure 4: Signal Augmentation Improves Classification with Random Forest Model with augmentation with mean accuracy= 90%</em>
 
-![My image5](../images/fig5.png)
-[**Fig. 5:** *Signal Augmentation Improves Classification with Random Forest Model with augmentation with mean accuracy= 90%.*]
 
 
 **C.	Validating the Models**
