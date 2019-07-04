@@ -1,6 +1,6 @@
 ---
 layout: post
-Electrofor-AI-sis
+title: Electrofor-AI-sis
 ---
 
 **A Machine Learning tool to assess Protein Quality**
