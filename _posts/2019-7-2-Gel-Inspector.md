@@ -38,30 +38,33 @@ Since I wasn’t able to completely get rid of the curvature from images [in Ste
 **Modeling and developing the core of Inspector-ML** 
 With the dataset prepared; a computer vision pipeline engineered,  I prototyped several machine learning models. 
 
-A.	Linear models
-I started simple -- applied the family of Logistic Regression models to the problem.  Augmentation did not help the linear models due to their inability to be much more flexible in fitting the data.
+**A.	Linear models**
+I started simple -- applied the family of Logistic Regression models to the problem.  Augmentation did not help the linear models due to their inability to be flexible in fitting the data.
 
-B.	Non-linear models capture relationships that simple linear models don’t
-While both types of models can fit the curvature of the 1D signals (Step 3 in the pipeline),  decision trees are able to discover novel structural relationships in the signal that linear models aren’t able to capture. Random Forests is much more flexible in the shapes of the curves that it can fit
+**B.	Non-linear models capture relationships that simple linear models don’t**
+While both types of models can fit the curvature of the 1D signals (Step 3 in the pipeline), decision trees are able to discover novel structural relationships in the signal that linear models aren’t able to capture. Random Forests being much more flexible in the shapes of the curves that it can fit benefitted a lot from data augmentation.
 
-Accuracy= 70%
-![Figure 4: Classification with Random Forest Model with no augmentation](../images/fig4.png)
-
-
-Accuracy= 90%
-![Figure 5: Signal Augmentation Improves Classification with Random Forest Model with augmentation](../images/fig5.png)
+![My image4](../images/fig4.png)
+[**Fig. 4:** *Classification with Random Forest Model with no augmentation; mean accuracy= 70%.*]
 
 
-C.	Validating the Models
+![My image5](../images/fig5.png)
+[**Fig. 5:** *Signal Augmentation Improves Classification with Random Forest Model with augmentation with mean accuracy= 90%.*]
+
+
+**C.	Validating the Models**
 I validated this pipeline on a held-out set of data. The algorithm performed well above chance in correctly identifying images of each class.  Here I am showing a confusion matrix, with the proportion of images in each category predicted to belong to each category. The strong diagonal reflects successful classification.
 
-Major Takeaways: 
-Inspector-ML positively impacts the Bottomline
+**Major Takeaways** 
+*Inspector-ML positively impacts the Bottomline*
 
 1.	Machine Learning can effectively perform this task & automation removes much of the subjectivity of manual interpretation of band positions and sizes.
+
 2.	Scientists can use their time more effectively -- frees up 6 weeks of productive time.  (½  hour X 250 working days) X 2 scientists ⇒ 250 man-hours/year. 
 
-![Figure 6: Built ML tool that successfully predicts quality scores for each lane](../images/fig6.png)
+![My image6](../images/fig6.png)
+[**Fig. 6:** *Built ML tool that successfully predicts quality scores for each lane*]
+
 
 Code
 The code for this project is publicly available on my GitHub (https://github.com/jain-rish/inspector_ML)
