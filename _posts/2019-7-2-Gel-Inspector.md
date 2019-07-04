@@ -3,8 +3,9 @@
 
 Protein production is a multi-billion dollar business, and companies are trying to not only increase its production but also improve the quality.  Protein quality is commonly assessed using electrophoresis.  Gel electrophoresis is the experimental method to separate proteins into its fragments based on their size [see Figure-1]. 
 
-![My image1](../images/fig1.png)
-[**Fig. 1:** *Gel electrophoresis experimental setup. When a voltage gradient is induced across a gel, the heavier proteins flow down the electric river much more slowly than the lighter ones.  These fragments show up under UV exposure as separated individual bands.*]
+<img src="../images/fig1.png" width="600" height="600" />
+<em>Fig. 1: Gel electrophoresis experimental setup. 
+When a voltage gradient is induced across a gel, the heavier proteins flow down the electric river much more slowly than the lighter ones.  These fragments show up under UV exposure as separated individual bands</em>
 
 **Visual Inspection of Gels is laborious and expensive**
 
