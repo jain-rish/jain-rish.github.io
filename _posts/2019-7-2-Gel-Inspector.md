@@ -76,7 +76,7 @@ I validated this pipeline on a held-out set of data. The algorithm performed wel
 
 
 **Code**
-The code for this project is publicly available on my GitHub (https://github.com/jain-rish/inspector_ML)
+The code for this project is publicly available on my GitHub [https://github.com/jain-rish/inspector_ML]
 
 
 
