@@ -68,7 +68,8 @@ I validated this pipeline on a held-out set of data. The algorithm performed wel
 2.	Scientists can use their time more effectively -- frees up 6 weeks of productive time.  (½  hour X 250 working days) X 2 scientists ⇒ 250 man-hours/year. 
 
 
-<img src="../images/fig6.png" width="70%" height="auto" />
+<img src="../images/fig6.png" width="100%" height="auto" />
+
 <em>Figure 6: Built ML tool that successfully predicts quality scores for each lane</em>
 
 
