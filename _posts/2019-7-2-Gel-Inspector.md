@@ -12,8 +12,7 @@ When a voltage gradient is induced across a gel, the heavier proteins flow down 
 Scientists (generally more than one, see Figure-2) painstakingly examine each lane individually and give a quality score. Visual examination and labeling is painful and laborious; it is not an efficient use of resources having PhD level scientists doing this repetitively day after day.  On top of that, this process is quite expensive -- To give a rough estimate of costs, if a scientist does this for an 1/2 hour a day @ $100$/hr., 20 days/month, 12 month; the costs can add up to $25K for 2 labelers and add another $25K as lost time to do more interesting work, totalling to $50K, which is a lot of money.  This is the reason I built Inspector Machine Learning -- I wanted to determine how image analysis and machine learning could reduce the burden on scientists and help automate the quality inspection of gel images.
 
 <img src="../images/fig2.png" width="100%" height="auto"/>
-
-<em>Figure 2: Scientific personnel making visual examination of gel-lanes, often disagree.</em>
+<em>Figure 2: Scientific personnel performing visual examination of gel-lanes.</em>
 
 **Digitizing the dataset & building an image pre-processing pipeline**
 
