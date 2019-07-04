@@ -15,28 +15,27 @@ Scientists (generally more than one, see Figure-2) painstakingly examine each la
 [**Fig. 2:** *Scientific personnel making visual examination of gel-lanes, often disagree.*]
 
 **Digitizing the dataset & building an image pre-processing pipeline**
-I worked with a tiny dataset of measly 15 images; each image has 26 lanes (and usually one reference lane); and each lane had one or more bands [see Figure 2].  For my analysis, I needed to isolate the individual lanes and build a single training samples and associate it with their quality labels [Figure 2; quality labels in red].  In total, I had 14X25= 350 samples that were to be used for training/ validation and test.  Note: I did not use/rely on Reference lane information to build features etc. [but they are typically used by the quality assessors].
+I worked with a tiny dataset of measly 14 images; each image has 26 lanes (and usually one reference lane); and each lane had one or more bands [see Figure 2].  For my analysis, I needed to isolate the individual lanes and build a single training samples and associate it with their quality labels [Figure 2; quality labels in red].  In total, I had 14X25= 350 samples that were to be used for training/ validation and test.  Note: I did not use/rely on Reference lane information to build features etc. [but they are typically used by the quality assessors].
 
-(graphically shown in Figure-3)
-Step 1.	Cropping + Perspective (affine) transformation of gel-images
-Manual cropping step was done to eliminate non signal information from the image and align the image to a regular grid, extracting the region of interest as cleanly as possible.  Since the images are warped, perspective transformation was performed on the entire image to straighten each lane as much as possible so that downstream analysis becomes easier.
+*I engineerding an image pre-processing pipeline to clean, extract and prepare the data for model building*
+**Step 1**.	*Cropping + Perspective (affine) transformation of gel-images*
+Manual cropping step was done to eliminate non-signal information from the image and align the image to a regular grid, extracting the region of interest (ie. gel lanes) as cleanly as possible.  Since the images are warped due to imaging setup, perspective transformation was performed on the entire image to straighten each lane as much as possible so that downstream analysis becomes easier.
 
-Step 2.	Extracted individual lanes using intensity gradients
-I implemented a custom function to cut the image into 26 equal sized columns using the leftmost and rightmost intensity markers. 
+**Step 2**.	*Extracted individual lanes using intensity gradients*
+I implemented a custom function to strip the image into 26 equal sized columns using the leftmost and rightmost intensity markers. 
 
-Step 3.	Calculated 1D signal from pixel columns
-This was perhaps the most important step in the analysis since it converted the columnar lane matrix into a 1D array signal using simple sums and averages. 
+**Step 3**.	*Calculated 1D signal from pixel columns*
+This was perhaps the most important step in the analysis since it converted the columnar lane matrix into a 1D array signal using simple sums and averages of pixel intensities. 
  
-Step 4.	Generated phase-shifted signals with different lags
-Since I wasn’t able to completely get rid of the curvature from images [in Step 1]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset  7-fold.
+**Step 4**	*Generated phase-shifted signals with different lags*
+Since I wasn’t able to completely get rid of the curvature from images [in Step 1]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset 7-X.
 
 
+![My image3](../images/fig3.png)
+[**Fig. 3:** *Image processing pipeline to digitize the data.*]
 
-![Figure 3: Image processing pipeline to digitize the data](../images/fig3.png)
 
- 
-
-Modeling and developing the core of Inspector-ML 
+**Modeling and developing the core of Inspector-ML** 
 With the dataset prepared; a computer vision pipeline engineered,  I prototyped several machine learning models. 
 
 A.	Linear models
