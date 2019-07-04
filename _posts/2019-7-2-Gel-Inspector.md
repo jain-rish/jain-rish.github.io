@@ -32,11 +32,10 @@ I implemented a custom function to strip the image into 26 equal sized columns u
 This was perhaps the most important step in the analysis since it converted the columnar lane matrix into a 1D array signal using simple sums and averages of pixel intensities. 
  
 **Step 4**	*Generated phase-shifted signals with different lags*
-Since I wasn’t able to completely get rid of the curvature from images [in Step 1]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset 7-X.
+Since I wasn’t able to completely get rid of the curvature from images [look in yellow circle in Step 2]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset 7-X.
 
-
-![My image3](../images/fig3.png)
-[**Fig. 3:** *Image processing pipeline to digitize the data.*]
+<img src="../images/fig3.png" width="150%" height="auto"/>
+<em>Figure 3: Image processing pipeline to digitize the data. </em>
 
 
 **Modeling and developing the core of Inspector-ML** 
