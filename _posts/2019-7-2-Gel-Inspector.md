@@ -11,7 +11,7 @@ Protein production is a multi-billion dollar business, and companies are trying 
 
 
 ![My image](../images/fig1.png)
-.caption[**Fig. 1:** Gel electrophoresis experimental setup]
+[**Fig. 1:** Gel electrophoresis experimental setup]
 
 
 
