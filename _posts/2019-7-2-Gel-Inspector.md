@@ -34,7 +34,7 @@ This was perhaps the most important step in the analysis since it converted the 
 **Step 4**	*Generated phase-shifted signals with different lags*
 Since I wasn’t able to completely get rid of the curvature from images [look in yellow circle in Step 2]-- I compensated for this problem by doing data augmentation.  I implemented custom functions to calculate autocorrelated signals (with both positive and negative lags); and was able to increase the size of the training dataset 7-X.
 
-<img src="../images/fig3.png" width="150%" height="auto"/>
+<img src="../images/fig3.png" width="200%" height="auto"/>
 <em>Figure 3: Image processing pipeline to digitize the data. </em>
 
 
