@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I love bringing data-driven discovery to bear on complex problems. I enjoy building machine learning tools to assess unique datasets and engineer solutions with the aim of building useful products.
 
 ### More Information
 
@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jain.rish@gmail.com](mailto:jain.rish@gmail.com)
