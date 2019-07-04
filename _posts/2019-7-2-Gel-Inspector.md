@@ -49,11 +49,11 @@ I started simple -- applied the family of Logistic Regression models to the prob
 **B.	Non-linear models capture relationships that simple linear models don’t**
 While both types of models can fit the curvature of the 1D signals (Step 3 in the pipeline), decision trees are able to discover novel structural relationships in the signal that linear models aren’t able to capture. Random Forests being much more flexible in the shapes of the curves that it can fit benefitted a lot from data augmentation.
 
-<img src="../images/fig4.png" width="100%" height="auto"/>
+<img src="../images/fig4.png" width="50%" height="auto"/>
 <em>Figure 4: Classification with Random Forest Model with no augmentation; mean accuracy= 70%</em>
 
-<img src="../images/fig5.png" width="100%" height="auto"/>
-<em>Figure 4: Signal Augmentation Improves Classification with Random Forest Model with augmentation with mean accuracy= 90%</em>
+<img src="../images/fig5.png" width="50%" height="auto"/>
+<em>Figure 5: Signal Augmentation Improves Classification with Random Forest Model with augmentation with mean accuracy= 90%</em>
 
 
 
