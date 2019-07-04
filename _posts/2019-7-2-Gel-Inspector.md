@@ -50,11 +50,13 @@ I started simple -- applied the family of Logistic Regression models to the prob
 B.	Non-linear models capture relationships that simple linear models don’t
 While both types of models can fit the curvature of the 1D signals (Step 3 in the pipeline),  decision trees are able to discover novel structural relationships in the signal that linear models aren’t able to capture. Random Forests is much more flexible in the shapes of the curves that it can fit
 
-Accuracy= 70%
 ![Figure 4: Classification with Random Forest Model with no augmentation](../images/fig4.png)
+Accuracy= 70%
 
-Accuracy= 90%
+
 ![Figure 5: Signal Augmentation Improves Classification with Random Forest Model with augmentation](../images/fig5.png)
+Accuracy= 90%
+
 
 
 C.	Validating the Models
